@@ -2,7 +2,7 @@ import static java.lang.IO.println;
 
 // Ref: https://osherove.com/tdd-kata-1
 // TODO:
-//  - Test with negative integers
+//  - Allow the Add method to handle an unknown amount of numbers
 public class StringCalculator {
     public static int add(String numbers){
         if (numbers.length() == 0) return 0;
