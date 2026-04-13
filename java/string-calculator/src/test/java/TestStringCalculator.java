@@ -17,4 +17,11 @@ class TestStringCalculator {
         int result = StringCalculator.add("1");
         assertEquals(1, result);
     }
+
+    @Test
+    @DisplayName("Input is two positive numbers separated by comma")
+    void CalculateSumOfTwoPositiveNumbers() {
+        int result = StringCalculator.add("3,2");
+        assertEquals(5, result);
+    }
 }
