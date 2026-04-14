@@ -24,4 +24,11 @@ class TestStringCalculator {
         int result = StringCalculator.add("3,2");
         assertEquals(5, result);
     }
+
+    @Test
+    @DisplayName("Input is an unknown amount of numbers separated by comma")
+    void CalculateSumOfUnknownAmountOfNumbers() {
+        int result = StringCalculator.add("1,2,3,4,5");
+        assertEquals(15, result);
+    }
 }
