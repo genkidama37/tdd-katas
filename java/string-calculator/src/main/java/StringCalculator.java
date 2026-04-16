@@ -7,6 +7,7 @@ import static java.lang.IO.println;
 //      - the following input is NOT ok: “1,\n” (not need to prove it - just clarifying)
 public class StringCalculator {
     public static int add(String numbers){
+        if (numbers.length() == 0) return 0;
         String[] singleNumbers = numbers.split(",");
 
         //noinspection ReassignedVariable
