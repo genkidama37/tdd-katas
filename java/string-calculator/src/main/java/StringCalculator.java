@@ -8,7 +8,7 @@ import static java.lang.IO.println;
 public class StringCalculator {
     public static int add(String numbers){
         if (numbers.length() == 0) return 0;
-        String[] singleNumbers = numbers.split(",");
+        String[] singleNumbers = numbers.split("[\n,]");
 
         //noinspection ReassignedVariable
         int result = 0;

@@ -31,4 +31,11 @@ class TestStringCalculator {
         int result = StringCalculator.add("1,2,3,4,5");
         assertEquals(15, result);
     }
+
+    @Test
+    @DisplayName("Input contains new lines between numbers")
+    void CalculateSumOfUnknownAmountOfNumbersWithNewLineAsSeparator() {
+        int result = StringCalculator.add("1\n2,3");
+        assertEquals(6, result);
+    }
 }
