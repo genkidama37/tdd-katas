@@ -2,9 +2,11 @@ import static java.lang.IO.println;
 
 // Ref: https://osherove.com/tdd-kata-1
 // TODO:
-//  Allow the Add method to handle new lines between numbers (instead of commas).
-//      - the following input is ok: “1\n2,3” (will equal 6)
-//      - the following input is NOT ok: “1,\n” (not need to prove it - just clarifying)
+// Support different delimiters
+//        to change a delimiter, the beginning of the string will contain a separate line that
+//        looks like this: “//[delimiter]\n[numbers…]” for example “//;\n1;2” should return three
+//        where the default delimiter is ‘;’ .
+//        the first line is optional. all existing scenarios should still be supported
 public class StringCalculator {
     public static int add(String numbers){
         if (numbers.length() == 0) return 0;
