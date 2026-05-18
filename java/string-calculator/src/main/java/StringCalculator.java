@@ -7,6 +7,8 @@ import static java.lang.IO.println;
 //        looks like this: “//[delimiter]\n[numbers…]” for example “//;\n1;2” should return three
 //        where the default delimiter is ‘;’ .
 //        the first line is optional. all existing scenarios should still be supported
+//  Follow Breakdown in this conversation:
+// https://app.element.io/#/room/!KfUMjGooXKBJMAPGmo:tchncs.de
 public class StringCalculator {
     public static int add(String numbers){
         if (numbers.length() == 0) return 0;
